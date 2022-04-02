@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //----------------------------------------action bar code------------------------------------------------------------
 		binding = ActivityMainBinding.inflate(getLayoutInflater());
 		setContentView(binding.getRoot());
+
 		setSupportActionBar(binding.appBarMain.toolbar);
         binding.appBarMain.fab.setVisibility(View.INVISIBLE);
 		DrawerLayout drawer = binding.drawerLayout;
