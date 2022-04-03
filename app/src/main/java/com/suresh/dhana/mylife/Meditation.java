@@ -33,13 +33,7 @@ public class Meditation extends AppCompatActivity {
 		TabLayout tabs = binding.tabs;
 		tabs.setupWithViewPager(viewPager);
 		FloatingActionButton fab = binding.fab;
+		binding.fab.setVisibility(View.INVISIBLE);
 
-		fab.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View view) {
-				Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-						.setAction("Action", null).show();
-			}
-		});
 	}
 }
