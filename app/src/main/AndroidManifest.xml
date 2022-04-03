@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyLife">
         <activity
+            android:name=".ToDo"
+            android:exported="false" />
+        <activity
+            android:name=".Skills"
+            android:exported="false" />
+        <activity
+            android:name=".Timer"
+            android:exported="false" />
+        <activity
+            android:name=".RemindMe"
+            android:exported="false" />
+        <activity
             android:name=".Meditation"
             android:exported="false"
             android:label="@string/title_activity_meditation"

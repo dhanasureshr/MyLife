@@ -74,8 +74,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 		if(view.getId() == R.id.meditationId)
 		{
 			//Do something Like starting an activity
-			//Intent intent = new Intent(MyActivity.this, NextActivity.class);
-			//startActivity(intent);
+			Intent intent = new Intent(this, Meditation.class);
+			startActivity(intent);
 
 			Toast.makeText(getApplicationContext(),"meditation",Toast.LENGTH_SHORT).show();
 
@@ -93,8 +93,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 		if(view.getId() == R.id.NotificationId)
 		{
 			//Do something Like starting an activity
-			//Intent intent = new Intent(MyActivity.this, NextActivity.class);
-			//startActivity(intent);
+			Intent intent = new Intent(this, RemindMe.class);
+			startActivity(intent);
 
 			Toast.makeText(getApplicationContext(),"notifications",Toast.LENGTH_SHORT).show();
 		}
@@ -102,8 +102,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 		if(view.getId() == R.id.timerId)
 		{
 			//Do something Like starting an activity
-			//Intent intent = new Intent(MyActivity.this, NextActivity.class);
-			//startActivity(intent);
+			Intent intent = new Intent(this, Timer.class);
+			startActivity(intent);
 
 			Toast.makeText(getApplicationContext(),"timer",Toast.LENGTH_SHORT).show();
 		}
@@ -111,8 +111,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 		if(view.getId() == R.id.skillsId)
 		{
 			//Do something Like starting an activity
-			//Intent intent = new Intent(MyActivity.this, NextActivity.class);
-			//startActivity(intent);
+			Intent intent = new Intent(this, Skills.class);
+			startActivity(intent);
 
 			Toast.makeText(getApplicationContext(),"skills",Toast.LENGTH_SHORT).show();
 		}
@@ -120,8 +120,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 		if(view.getId() == R.id.todoId)
 		{
 			//Do something Like starting an activity
-			//Intent intent = new Intent(MyActivity.this, NextActivity.class);
-			//startActivity(intent);
+			Intent intent = new Intent(this, ToDo.class);
+			startActivity(intent);
 
 			Toast.makeText(getApplicationContext(),"todo",Toast.LENGTH_SHORT).show();
 		}
