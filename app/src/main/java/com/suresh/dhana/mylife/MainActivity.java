@@ -12,16 +12,19 @@ import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import com.suresh.dhana.mylife.databinding.ActivityMainBinding;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener 
 {
 
 	private AppBarConfiguration mAppBarConfiguration;
 	private ActivityMainBinding binding;
 
+	public boolean meditationflag = false;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) 
 	{
 		super.onCreate(savedInstanceState);
+
 //----------------------------------------action bar code------------------------------------------------------------
 		binding = ActivityMainBinding.inflate(getLayoutInflater());
 		setContentView(binding.getRoot());
@@ -76,7 +79,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 			//Do something Like starting an activity
 			Intent intent = new Intent(this, Meditation.class);
 			startActivity(intent);
-
+			meditationflag = true;
 			Toast.makeText(getApplicationContext(),"meditation",Toast.LENGTH_SHORT).show();
 
 		}
