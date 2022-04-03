@@ -23,16 +23,21 @@ public class Exercise extends AppCompatActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-
+		//---------------------------------------------------------------------------
 		binding = ActivityExerciseBinding.inflate(getLayoutInflater());
 		setContentView(binding.getRoot());
 
 		SectionsPagerAdapter sectionsPagerAdapter = new SectionsPagerAdapter(this, getSupportFragmentManager());
 		ViewPager viewPager = binding.viewPager;
 		viewPager.setAdapter(sectionsPagerAdapter);
+
 		TabLayout tabs = binding.tabs;
 		tabs.setupWithViewPager(viewPager);
+
 		FloatingActionButton fab = binding.fab;
 		binding.fab.setVisibility(View.INVISIBLE);
+	   //--------------------------------------------------------------------------------
+
+
 	}
 }

@@ -23,7 +23,7 @@ public class Meditation extends AppCompatActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-
+		//----------------------------------------------------------------
 		binding = ActivityMeditationBinding.inflate(getLayoutInflater());
 		setContentView(binding.getRoot());
 
@@ -34,6 +34,7 @@ public class Meditation extends AppCompatActivity {
 		tabs.setupWithViewPager(viewPager);
 		FloatingActionButton fab = binding.fab;
 		binding.fab.setVisibility(View.INVISIBLE);
+		//-------------------------------------------------------------------------
 
 	}
 }
