@@ -1,4 +1,5 @@
 package com.suresh.dhana.mylife;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
@@ -46,6 +47,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 		findViewById(R.id.timerId).setOnClickListener(this);
 		findViewById(R.id.skillsId).setOnClickListener(this);
 		findViewById(R.id.todoId).setOnClickListener(this);
+
+
+
 	}
 
 	@Override
@@ -80,8 +84,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 		if(view.getId() == R.id.GymId)
 		{
 			//Do something Like starting an activity
-			//Intent intent = new Intent(MyActivity.this, NextActivity.class);
-			//startActivity(intent);
+			Intent intent = new Intent(this, Exercise.class);
+			startActivity(intent);
 
 			Toast.makeText(getApplicationContext(),"gym",Toast.LENGTH_SHORT).show();
 		}
