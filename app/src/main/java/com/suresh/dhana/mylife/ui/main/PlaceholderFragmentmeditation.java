@@ -6,28 +6,27 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.suresh.dhana.mylife.R;
 import com.suresh.dhana.mylife.databinding.FragmentExerciseBinding;
 import com.suresh.dhana.mylife.databinding.FragmentMeditationBinding;
 
 /**
  * A placeholder fragment containing a simple view.
  */
-public class PlaceholderFragment extends Fragment {
+public class PlaceholderFragmentmeditation extends Fragment {
 
 	private static final String ARG_SECTION_NUMBER = "section_number";
 
 	private PageViewModel pageViewModel;
-	private FragmentExerciseBinding binding;
+	private FragmentMeditationBinding binding;
 
-	public static PlaceholderFragment newInstance(int index) {
-		PlaceholderFragment fragment = new PlaceholderFragment();
+	public static PlaceholderFragmentmeditation newInstance(int index) {
+		PlaceholderFragmentmeditation fragment = new PlaceholderFragmentmeditation();
 		Bundle bundle = new Bundle();
 		bundle.putInt(ARG_SECTION_NUMBER, index);
 		fragment.setArguments(bundle);
@@ -50,7 +49,7 @@ public class PlaceholderFragment extends Fragment {
 			@NonNull LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 
-		binding = FragmentExerciseBinding.inflate(inflater, container, false);
+		binding = FragmentMeditationBinding.inflate(inflater, container, false);
 		View root = binding.getRoot();
 
 

@@ -15,6 +15,7 @@ import android.view.View;
 
 import com.suresh.dhana.mylife.ui.main.SectionsPagerAdapter;
 import com.suresh.dhana.mylife.databinding.ActivityMeditationBinding;
+import com.suresh.dhana.mylife.ui.main.SectionsPagerAdaptermeditation;
 
 public class Meditation extends AppCompatActivity {
 
@@ -27,7 +28,7 @@ public class Meditation extends AppCompatActivity {
 		binding = ActivityMeditationBinding.inflate(getLayoutInflater());
 		setContentView(binding.getRoot());
 
-		SectionsPagerAdapter sectionsPagerAdapter = new SectionsPagerAdapter(this, getSupportFragmentManager());
+		SectionsPagerAdaptermeditation sectionsPagerAdapter = new SectionsPagerAdaptermeditation(this, getSupportFragmentManager());
 		ViewPager viewPager = binding.viewPager;
 		viewPager.setAdapter(sectionsPagerAdapter);
 		TabLayout tabs = binding.tabs;

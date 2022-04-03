@@ -1,27 +1,30 @@
 package com.suresh.dhana.mylife.ui.main;
 
 import android.content.Context;
+
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
+
 import com.suresh.dhana.mylife.Exercise_fragment;
 import com.suresh.dhana.mylife.Exercise_fragment1;
-import com.suresh.dhana.mylife.MainActivity;
+import com.suresh.dhana.mylife.Meditation_fragment;
+import com.suresh.dhana.mylife.Meditation_fragment1;
 import com.suresh.dhana.mylife.R;
 
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to
  * one of the sections/tabs/pages.
  */
-public class SectionsPagerAdapter extends FragmentPagerAdapter {
+public class SectionsPagerAdaptermeditation extends FragmentPagerAdapter {
 
 	@StringRes
 	private static final int[] TAB_TITLES = new int[]{R.string.tab_text_1, R.string.tab_text_2};
 	private final Context mContext;
 
-	public SectionsPagerAdapter(Context context, FragmentManager fm)
+	public SectionsPagerAdaptermeditation(Context context, FragmentManager fm)
 	{
 		super(fm);
 		mContext = context;
@@ -35,10 +38,10 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
 		switch (position)
 		{
 			case 0:
-				fragment = new Exercise_fragment();
+				fragment = new Meditation_fragment();
 				break;
 			case 1:
-				fragment = new Exercise_fragment1();
+				fragment = new Meditation_fragment1();
 				break;
 
 		}
