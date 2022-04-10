@@ -14,7 +14,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.suresh.dhana.mylife.R;
 import com.suresh.dhana.mylife.databinding.FragmentExerciseBinding;
-import com.suresh.dhana.mylife.databinding.FragmentMeditationBinding;
+
 
 /**
  * A placeholder fragment containing a simple view.

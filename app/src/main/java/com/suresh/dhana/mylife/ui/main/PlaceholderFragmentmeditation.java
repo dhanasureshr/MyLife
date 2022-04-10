@@ -12,7 +12,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.suresh.dhana.mylife.databinding.FragmentExerciseBinding;
+
 import com.suresh.dhana.mylife.databinding.FragmentMeditationBinding;
 
 /**

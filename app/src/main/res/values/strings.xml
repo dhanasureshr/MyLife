@@ -16,7 +16,9 @@
     <string name="menu_gallery">Events</string>
     <string name="menu_slideshow">Options</string>
     <string name="title_activity_exercise">Exercise</string>
-    <string name="tab_text_1">Timer</string>
-    <string name="tab_text_2">Features</string>
+    <string name="Exercise_tab_text_1">Gym Timer</string>
+    <string name="Exercise_tab_text_2">Gym Types</string>
+    <string name="Meditation_tab_text_1">Pranayama</string>
+    <string name="Meditation_tab_text_2">Meditate Types</string>
     <string name="title_activity_meditation">Meditation</string>
 </resources>

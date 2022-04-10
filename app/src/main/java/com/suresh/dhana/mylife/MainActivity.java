@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 	private AppBarConfiguration mAppBarConfiguration;
 	private ActivityMainBinding binding;
 
-	public boolean meditationflag = false;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) 
 	{
@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 			//Do something Like starting an activity
 			Intent intent = new Intent(this, Meditation.class);
 			startActivity(intent);
-			meditationflag = true;
+
 			Toast.makeText(getApplicationContext(),"meditation",Toast.LENGTH_SHORT).show();
 
 		}

@@ -21,7 +21,7 @@ import com.suresh.dhana.mylife.R;
 public class SectionsPagerAdaptermeditation extends FragmentPagerAdapter {
 
 	@StringRes
-	private static final int[] TAB_TITLES = new int[]{R.string.tab_text_1, R.string.tab_text_2};
+	private static final int[] TAB_TITLES = new int[]{R.string.Meditation_tab_text_1, R.string.Meditation_tab_text_2};
 	private final Context mContext;
 
 	public SectionsPagerAdaptermeditation(Context context, FragmentManager fm)
