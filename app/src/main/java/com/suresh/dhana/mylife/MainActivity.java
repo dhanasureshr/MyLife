@@ -71,6 +71,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 				|| super.onSupportNavigateUp();
 	}
 
+
+	//  onclick view listeners logic
+
 	@Override
 	public void onClick(View view) 
 	{
