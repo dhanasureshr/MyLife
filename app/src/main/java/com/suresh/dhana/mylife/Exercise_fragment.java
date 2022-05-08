@@ -13,5 +13,8 @@ public class Exercise_fragment extends Fragment
 	@Override
 	public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 		return inflater.inflate(R.layout.excercise_frag1, container,false);
+
+
+
 	}
 }
